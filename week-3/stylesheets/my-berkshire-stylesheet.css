@@ -1,3 +1,85 @@
-html {
-  background-color: red;
+body {
+  color: #000080;
+  background-color: #ffffff;
+  font-family: papyrus;
 }
+
+a:link {
+  color: #800080;
+}
+
+a.visited {
+  color: #ff0000;
+}
+
+header {
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+header span {
+  font-size: 1.5em;
+}
+#inc {
+  font-size: 0.75em;
+}
+#address {
+  font-size: 0.5em;
+}
+#home-page {
+  font-size: 0.75em;
+}
+
+table {
+  width: 100%
+}
+
+td {
+  vertical-align: top;
+}
+
+table p {
+  font-size: 0.75em;
+  margin-left: 40px;
+}
+
+table {
+  border-bottom: 1px solid black;
+}
+
+center{
+  border-bottom: 1px solid black;
+}
+
+#x {
+  font-size: .8em;
+  border-bottom: 1px solid black;
+}
+
+center p {
+    font-size: 0.5em;
+}
+
+/*
++What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+The most important piece is to make sure the relative path is correct.
+
++What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+Not too hard, a bit of googling, a bit of tinkering, until I was satisfied. I had to use a margin attribute to get the non-bulleted text to line up properly. Also, it was helpful to put "wrappers" around some of the sections so we could change the text size or some other attribute in one fell swoop (shout-out to my partner Chunyu for that idea)
+
++What CSS did you use to modify the element style (like size, color, etc.)
+
+Font-size with "em" was a big one. This let us increase or decrease the font size in simply and keep it relative to other elements.
+
++Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+Yes, there are four IDs (x, inc, address and home-page). For the most part, we used this to manipulate font size for a small part of the content.
+
++When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+So, the real BH site was entirely styled in HTML. My guess is this was done a long time ago, the site is pretty basic. Changing it would require A LOT of individual changes. CSS would be a lot easier. For that reason, I think our site was cleaner and made beter use of best practices.
+
+*/
