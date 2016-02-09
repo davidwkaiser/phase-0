@@ -1,0 +1,27 @@
+body {
+  font-family: courier;
+}
+
+img{
+  height=150px width=300px;
+}
+
+header{
+  background-color:Red;
+}
+
+.column-1{
+  display: inline-block;
+  width:45%;
+  vertical-align: top;
+}
+
+.column-2{
+  display: inline-block;
+  width:45%;
+  vertical-align: top;
+}
+
+footer{
+  background-color:Blue;
+}
