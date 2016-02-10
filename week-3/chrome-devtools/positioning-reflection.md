@@ -1,3 +1,15 @@
+![alt tag](imgs/001.png)
+![alt tag](imgs/002.png)
+![alt tag](imgs/003.png)
+![alt tag](imgs/004.png)
+![alt tag](imgs/005.png)
+![alt tag](imgs/006.png)
+![alt tag](imgs/007.png)
+![alt tag](imgs/008.png)
+![alt tag](imgs/009-1.png)
+![alt tag](imgs/009-2.png)
+
+
 *How can you use Chrome's DevTools inspector to help you format or position elements?*
 It's a much faster way to try things. Rather than make a change to the HTML or CSS file, then save, then open in the browser, we can open up devtools and tinker and get instant feedback (yay!) about the changes we make. It's much faster and easier, much less frustrating than toggling back and forth. It also lets us play around with other people's sites to see what we can do, without worrying about "breaking" them.
 
