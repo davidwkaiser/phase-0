@@ -25,7 +25,29 @@ var1 = 8 * stdYear + 2 * leapYear
 var2 = 7 * stdYear + 3 * leapYear
 
 puts "A decade has either #{var1}  or #{var2} minutes, depending on if there are two or three leap years"
-
-
 ```
+
+**How does Ruby handle addition, subtraction, multiplication, and division of numbers?**
+pretty nicely, in my opinion, the math systems are pretty clean.
+
+**What is the difference between integers and floats?**
+discussed above. integers are like "whole numbers," although they can be negative, too. Floats are decimals.
+
+**What is the difference between integer and float division?**
+integer division may return a remainder (i.e. 11 / 3 = 3), float division will return a decimal (11 / 3 = 3.6666..)
+
+**What are strings? Why and when would you use them?**
+Strings are text. Anytime one wishes to use text, like right now, to record or manipulate letters and numbers (as text, not as integers or floats)
+
+**What are local variables? Why and when would you use them?**
+a local variable "points to" a value, like x = 2. Using a variable is like using a pronoun, it's much easier to say "he" than Rufus Xavier Sasparilla. local variables start with a lowercase letter or underscore, and are not set to nil before assingment. local variables can be found in the scope of a loop, class, function, etc.
+
+**How was this challenge? Did you get a good review of some of the basics?**
+Pretty easy. Nice to get the review on string methods, and to take rspec for a test drive and see how it works, even if I don't really know what's under the hood yet.
+
+
+
+https://github.com/davidwkaiser/phase-0/blob/master/week-4/defining-variables.rb
+https://github.com/davidwkaiser/phase-0/blob/master/week-4/simple-string.rb
+https://github.com/davidwkaiser/phase-0/blob/master/week-4/basic-math.rb
 
