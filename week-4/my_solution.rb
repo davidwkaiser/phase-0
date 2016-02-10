@@ -1,6 +1,6 @@
 # Define an Empty Method
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 
 # Your Solution Below
