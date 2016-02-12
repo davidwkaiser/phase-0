@@ -24,3 +24,7 @@ puts "That's a great number, but #{fav + 1} is even better, because it's BIGGER!
 #   type rspec program_name.rb
 # What was confusing about this material? What made sense?
 #   All fairly clear. In fact, the only confusing bit was where to submit the links within the assignment page(s).
+
+https://github.com/davidwkaiser/phase-0/blob/master/week-4/address/my_solution.rb
+
+https://github.com/davidwkaiser/phase-0/blob/master/week-4/math/my_solution.rb
