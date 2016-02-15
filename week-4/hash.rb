@@ -13,6 +13,11 @@ my_info = {
 :age => 47
 }
 
+puts my_info[:first_name]
+puts my_info[:last_name]
+puts my_info[:hometown]
+puts my_info[:age]
+
 
 
 
