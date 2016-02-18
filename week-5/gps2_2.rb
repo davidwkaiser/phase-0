@@ -72,3 +72,21 @@ add_item(list, "beer", 6)
 remove_item(list, "Grapes")
 update_item(list, "Apples", 3)
 print_list(list)
+
+
+# What did you learn about pseudocode from working on this challenge? 1
+#follow the guidelines when they exist.
+
+# What are the tradeoffs of using Arrays and Hashes for this challenge?
+#Hmm, we could create an array with item and quantity, but that seems complex, hashes were created for this.
+
+# What does a method return?
+#the last item that is caluculated / handled (although puts, for example, returns nil). We can force it to return something else by using return or p
+# What kind of things can you pass into methods as arguments?
+#strings, arrays, integers, floats, hashes, booleans, all sorts of things.
+
+# How can you pass information between methods?
+#by having one method call another. Also by having one method modify a data struture outside its scope that becomes the input for another method.
+
+# What concepts were solidified in this challenge, and what concepts are still confusing?
+#still getting used to ruby syntax, and built in methods. I know them conceptually, but not the specifics. (like I know the word, not the spelling)
