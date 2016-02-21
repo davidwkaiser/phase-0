@@ -41,6 +41,7 @@ end
 #I found this option for using an enumerator to generate random rolls of a die, but
 #1> it seems more complicated than our current method and
 #2> I don't fully understand the yield function yet
+
 # s is the number of sides
 # def dice(s)
 #   Enumerator.new do |e|
