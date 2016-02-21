@@ -99,11 +99,19 @@ a.each {|key, value| puts "#{key} - group #{value}" }
 
 
 # Was your approach for automating this task a good solution? What could have made it even better?
-#Yes, it worked pretty well. I used a hash and that seemed like a reasonable way, with a while loop to iterate over it and create the assignments. The system I used to determine group size and to handle the "stragglers" was a bit brute force, it wouldn't scale up, but it might not have to. What I don't like is that right now, there is code that is almost line for line repeated, I tried to pull it out and put it in a separate method, but I got all sorts of local variable errors. I don't like that my code isn't DRY, but I don't know how to fix it yet.
+#Yes, it worked pretty well. I used a hash and that seemed like a reasonable way, with a while loop to iterate over it and create the assignments.
+#The system I used to determine group size and to handle the "stragglers" was a bit brute force, it wouldn't scale up, but it might not have to.
+#What I don't like is that right now, there is code that is almost line for line repeated, I tried to pull it out and put it in a separate method, but I got all sorts of local variable errors.
+#I don't like that my code isn't DRY, but I don't know how to fix it yet.
 
-# What data structure did you decide to store the accountability groups in and why? I used a hash, since it struck me as natural that there would be a person-group asignment and that looked like a hash. A colleague mentioned on slack that he was working with array of arrays, That would work, I assume. I'm not sure which is more flexible for down the road, but there are alternatives.
+# What data structure did you decide to store the accountability groups in and why?
+#I used a hash, since it struck me as natural that there would be a person-group asignment and
+#that looked like a hash.
+#A colleague mentioned on slack that he was working with array of arrays, That would work, I assume. I'm not sure which is more flexible for down the road, but there are alternatives.
 
-# What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods? I learned .shuffle, to make it random. I also learned about each and sort to manipulate the hash and make printing pretty. I am learning about variable scope, although I am apprently not done with that yet, I couldn't get my pull-out method to work. More learning to do.
+# What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
+#I learned .shuffle, to make it random. I also learned about each and sort to manipulate the hash and make printing pretty.
+#I am learning about variable scope, although I am apprently not done with that yet, I couldn't get my pull-out method to work. More learning to do.
 
 
 
