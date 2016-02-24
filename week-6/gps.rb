@@ -1,6 +1,6 @@
 # Your Names
 # 1) Dave Kaiser
-# 2) Lilian Ku
+# 2) Li-Lian Ku
 
 # We spent [1] hours on this challenge.
 
