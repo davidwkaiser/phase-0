@@ -81,6 +81,13 @@ new_card.check_card
 
 # Reflection
 # What was the most difficult part of this challenge for you and your pair?
+# keeping track of changing the digits back and forth between strings and integers.
+# also, knowing which methods could be stacked together, and which were destructive, and managing them.
+
 # What new methods did you find to help you when you refactored?
+# .flatten was useful, because our way of "splitting" double digit numbers created an array within an array
+# .values_at, we used this to isolate values with "even" and "odd" indices
+
 # What concepts or learnings were you able to solidify in this challenge?
+# raising errors, unless, destructive methods, mapping, classes.
 
