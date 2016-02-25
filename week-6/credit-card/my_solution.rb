@@ -21,7 +21,7 @@
 
 # Don't forget to check on initialization for a card length
 # of exactly 16 digits
-
+=begin
 class CreditCard
   attr_reader :card_number
 
@@ -62,21 +62,43 @@ class CreditCard
   end
 
 end
-
 # DRIVER CODE
 
 new_card = CreditCard.new(2445678901234569)
 new_card.check_card
-
+=end
 
 
 # Refactored Solution
+class CreditCard
+  attr_reader :card_number
 
+  def initialize(number)
+    @card_number = number.to_s.split(//)
+    unless card_number.length == 16
+      raise ArgumentError.new ("Card number must be 16 digits")
+    end
+  end
 
+  def check_card
+    numbers_to_double =  card_number.values_at(* card_number.each_index.select {|index| index.even?})
+    numbers_to_double.map! {|i| (i.to_i * 2).to_s}
+    numbers_stay_same = card_number.values_at(* card_number.each_index.select {|index| index.odd?})
+    all_digits = numbers_to_double.concat(numbers_stay_same)
+    all_digits.map! do |index|
+      index.length == 2 ? index.split(//) : index
+    end
+    all_digits.flatten!
 
+    sum = 0
+    for x in all_digits
+      sum += x.to_i
+    end
 
+    sum % 10 == 0 ? true : false
+  end
 
-
+end
 
 
 # Reflection
