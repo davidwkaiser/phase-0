@@ -97,7 +97,6 @@ class CreditCard
 
     sum % 10 == 0 ? true : false
   end
-
 end
 
 
