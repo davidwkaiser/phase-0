@@ -1,0 +1,91 @@
+Did you learn anything new about JavaScript or programming in general?
+--The history of JS was interesting. Not much else new here.
+
+Are there any concepts you feel uncomfortable with?
+--Not yet, but I do have an overall unease with JS. Ruby is so much prettier and more elegant.
+
+Ch. 1: Values, Types, and Operators (Links to an external site.)
+Identify two similarities and two differences between JavaScript and Ruby syntax with regard to numbers, arithmetic, strings, booleans, and various operators.
+-SIM Numbers, both integers and floats seem to work the same
+-SIM Strings seem pretty similar between R and JS, as do booleans
+-DIFF I don't remember seeing special numbers like Infinity and NaN in R
+-DIFF JS has Null and Undefined, R just has NIL
+
+Ch. 2: Program Structure
+What is an expression?
+-A fragment of code that yields a value
+
+What is the purpose of semicolons in JavaScript? Are they always required?
+-semi-colons separate statements. It does not always have to be there, apparently, but I don't yet know the rules
+
+What causes a variable to return undefined?
+-asking for the value of an empty variable (tentacle has nothing to grasp)
+
+Write your own variable and do something to it in the eloquent.js file.
+-DONE
+
+What does console.log do and when would you use it? What Ruby method(s) is this similar to?
+-it prints to the screen, similar to puts or print in R
+
+
+Write a short program that asks for a user to input their favorite food. After they hit return, have the program respond with "Hey! That's my favorite too!" (You will probably need to run this in the Chrome console (Links to an external site.) rather than node since node does not support prompt or alert). Paste your program into the eloquent.js file.
+-See eloquent.js file
+
+Describe while and for loops
+-A WHILE loop executes as long as some condition is met, for example, "while" x< 10. It can run forever under some circumstances.
+-A FOR loop operates over a specified set of data, according to operations set in advance.
+-For example, a a FOR loop can count from 0 to 10 by 2s and do some operation. A FOR loop ends when (if?) if reaches the end of its set
+
+What other similarities or differences between Ruby and JavaScript did you notice in this section?
+SIM: Both have FOR, WHILE, IF, BREAK, local and global variables, and CASE
+SIM: Both allow += for updating. Both allow commenting
+SIM: Both have a way of printing to the screen. Both are whitespace-indifferent
+DIFF: The actual syntax for ALL of the above items is different
+
+
+Complete at least one of the exercises (Looping a Triangle, FizzBuzz, of Chess Board) in the eloquent.js file.
+See eloquent.js for FizzBuzz
+
+
+Ch. 3: Functions (Links to an external site.) (Skip the sections on closure and recursion)
+What are the differences between local and global variables in JavaScript?
+-Similar to Ruby, as far as I can see. Locals are set within a function or loop.
+-Globals are set at the top line.
+
+When should you use functions?
+-To return a value, such as the square of an input argument, or to create a "side effect," like printing a line
+
+What is a function declaration?
+-Using the function keyword to create a statement, instead of declaring it as a variable.
+-This has the added benefit of being processed prior to the program being run.
+
+Complete the minimum exercise in the eloquent.js file.
+
+
+Ch. 4: Data Structures: Objects and Arrays (Links to an external site.)
+Skip the sections on the Lycanthrope's log, Computing Correlations, and sections from Further Arrayology to the Global Object, but read the chapter summary.
+What is the difference between using a dot and a bracket to look up a property? Ex. array.max vs array["max"]
+-Dot requires a valid variable name and it directly names the property. it is preferred when possible, and it is simple
+-Bracket means the expression is evaluated to the property name. it is used when the item being evaulated is dynamic
+
+
+Create an object called me that stores your name, age, three favorite foods, and a quirk in your eloquent.js file.
+-se eloquent.js file
+
+What is a JavaScript object with a name and value property similar to in Ruby?
+-JS objects are most similar to Ruby hashes
+
+
+What are the biggest similarities and differences between JavaScript and Ruby?
+SIM: they have many similar primitives, structures and functions, at least at the high level
+DIFF: overall syntax is very different. also, functions are treated like variables in JS, which is unlike Ruby.
+
+
+Was some of your Ruby knowledge solidified by learning another language? If so, which concepts?
+-Not so much. I have studied human languages, and pretty much anything you can say in English you can say in Russian, although
+-it may be easier to say in E vs R or vice versa. Programming languages seem similar.
+
+
+How do you feel about diving into JavaScript after reading these chapters?
+-So far, I think JS is a much less pretty and elegant language than Ruby, perhaps because of all the extra brackets and parens
+-perhaps I will feel differently once I ses what JS does easily that Ruby can't do, or that is hard and kludgy in Ruby
