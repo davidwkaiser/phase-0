@@ -89,3 +89,6 @@ Was some of your Ruby knowledge solidified by learning another language? If so, 
 How do you feel about diving into JavaScript after reading these chapters?
 -So far, I think JS is a much less pretty and elegant language than Ruby, perhaps because of all the extra brackets and parens
 -perhaps I will feel differently once I ses what JS does easily that Ruby can't do, or that is hard and kludgy in Ruby
+
+
+https://github.com/davidwkaiser/phase-0/blob/master/week-7/eloquent.js
