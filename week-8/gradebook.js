@@ -1,7 +1,7 @@
 /*
 Gradebook from Names and Scores
-I worked on this challenge [by myself, with:]
-This challenge took me [#] hours.
+I worked on this challenge with Afaan Naqvi
+This challenge took me [1] hours.
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
 variables match (i.e., 'Joseph' is the first element in students; his scores are the first value in scores.).
@@ -16,35 +16,80 @@ var scores = [ [80, 70, 70, 100],
                [100, 90, 95, 85] ]
 
 
-
-
-
-
 // __________________________________________
 // Write your code below.
 
+//var gradebook = {
+//  "Joseph" : {"testScores" : [80, 70, 70, 100]},
+//  "Susan" : {"testScores" : [85, 80, 90, 90]},
+  // "William" : {"testScores" : [75, 70, 80, 75]},
+  // "Elizabeth" : {"testScores" : [100, 90, 95, 85]},
+  //
+// };
+
+// var gradebook = {}
+
+// for (var i=0; i <4; i +=1){
+//   gradebook[students[i]] = {"testScores" : scores[i]};
+// }
+
+// gradebook["addScore"] = function scoring(name, score){
+//   gradebook[name]["testScores"].push(score)
+// }
+
+
+// function average(integer_array){
+//   var sum = 0;
+//   for (var i = 0; i < integer_array.length; i ++){
+//     sum += integer_array[i];
+//   };
+//   var array_average = sum/(integer_array.length);
+//   return array_average;
+// }
+
+// gradebook["getAverage"] = function (name){
+//   return average(gradebook[name]["testScores"])
+// }
 
 
 
-
-
-
-
-// __________________________________________
 // Refactored Solution
 
+var gradebook = {}
+
+for (var i=0; i < students.length; i +=1){
+  gradebook[students[i]] = {"testScores" : scores[i]};
+}
+
+gradebook["addScore"] = function scoring(name, score){
+  gradebook[name]["testScores"].push(score)
+}
 
 
+function average(integer_array){
+  var sum = integer_array.reduce(function (a, b) { return a + b; }, 0);
+  var array_average = sum/(integer_array.length);
+  return array_average;
+}
 
-
-
+gradebook["getAverage"] = function (name){
+  return average(gradebook[name]["testScores"])
+}
 
 
 // __________________________________________
 // Reflect
 
+// What did you learn about adding functions to objects?
+//I learned that I really do not have a good handle on JS objects and functions yet.
+//I learned that I need to read up on the notation involved in JS objects
 
 
+// How did you iterate over nested arrays in JavaScript?
+//used .length to get the end of the loop and looped over it adding the property and value
+
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+//in our refactoring, we brough in .reduce to simplify the process of summing over the array
 
 
 
