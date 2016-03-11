@@ -39,7 +39,8 @@ var voteCount = {
   vicePresident: {},
   secretary: {},
   treasurer: {}
-}
+};
+
 
 /* The name of each student receiving a vote for an office should become a property
 of the respective office in voteCount.  After Alex's votes have been tallied,
@@ -63,35 +64,151 @@ var officers = {
 }
 
 // Pseudocode
+//create a function to iterate over the "votes" object
+//tally votes for each candidate's name
+//if candidate is not already in voteCount object, add, with one vote
+//if already there, increment vote count by 1
+
+
+
+
 
 
 // __________________________________________
 // Initial Solution
+/*
+
+// Set counter for number of votes to 1 if the name occurs in the following functions.
+var count = 1;
+
+// Add candidate name and number of votes to voteCount. Increase number of votes by one for each occurance of a candidate's name.
+for (var name in votes) {
+  var cand = votes[name]['president'];
+  if (voteCount['president'][cand] >= 1) {
+    voteCount['president'][cand]++;
+  }
+  else {
+    voteCount['president'][cand] = count;
+  }
+}
+for (var name in votes) {
+  var cand = votes[name]['vicePresident'];
+  if (voteCount['vicePresident'][cand] >= 1) {
+    voteCount['vicePresident'][cand]++;
+  }
+  else {
+    voteCount['vicePresident'][cand] = count;
+  }
+}
+for (var name in votes) {
+  var cand = votes[name]['secretary'];
+  if (voteCount['secretary'][cand] >= 1) {
+    voteCount['secretary'][cand]++;
+  }
+  else {
+    voteCount['secretary'][cand] = count;
+  }
+}
+for (var name in votes) {
+  var cand = votes[name]['treasurer'];
+  if (voteCount['treasurer'][cand] >= 1) {
+    voteCount['treasurer'][cand]++;
+  }
+  else {
+    voteCount['treasurer'][cand] = count;
+  }
+}
+
+// Set a variable that keeps track of votes to 0.
+var voteTotal = 0;
+
+// Set a condition where a candidate's number of votes exceeds the previous instance of voteCount, their name is set as the value of the role they are running for in officers.
+for (var name in voteCount['president']) {
+  if (voteCount['president'][name] > voteTotal) {
+    voteTotal = voteCount['president'][name];
+    officers['president'] = name;
+  }
+}
+voteTotal = 0;
+for (var name in voteCount['vicePresident']) {
+  if (voteCount['vicePresident'][name] > voteTotal) {
+    voteTotal = voteCount['vicePresident'][name];
+    officers['vicePresident'] = name;
+  }
+}
+voteTotal = 0;
+for (var name in voteCount['secretary']) {
+  if (voteCount['secretary'][name] > voteTotal) {
+    voteTotal = voteCount['secretary'][name];
+    officers['secretary'] = name;
+  }
+}
+voteTotal = 0;
+for (var name in voteCount['treasurer']) {
+  if (voteCount['treasurer'][name] > voteTotal) {
+    voteTotal = voteCount['treasurer'][name];
+    officers['treasurer'] = name;
+  }
+}
 
 
-
-
-
-
-
+*/
 // __________________________________________
 // Refactored Solution
 
+for (var name in votes) {
+  var count = 1;
+  for (var office in votes[name]) {
+    var cand = votes[name][office];
+    if (voteCount[office][cand] >= 1) {
+      voteCount[office][cand]++;
+    }
+    else {
+      voteCount[office][cand] = count;
+    }
+  }
+};
+
+
+for (var office in voteCount){
+  var voteTotal = 0;
+  for (var name in voteCount[office]) {
+    if (voteCount[office][name] > voteTotal) {
+      voteTotal = voteCount[office][name];
+      officers[office] = name;
+    }
+  }
+};
 
 
 
 
 
 // __________________________________________
-// Reflection
+/*
+Reflection
+What did you learn about iterating over nested objects in JavaScript?
+1> they can be very complex
+2> build up the pieces, of both function and notation, from smaller bits
+3> it is often easier to build a series of brute force functions, then abstract into a loop,
+than to try to create the loop at first
+4> get the dot vs bracket notation right
+
+Were you able to find useful methods to help you with this?
+Although I did not use them at the end, I found .sort, .keys
+
+What concepts were solidified in the process of working through this challenge?
+Syntax and notation of datastructues was the big one here.
 
 
 
-
+*/
 
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
+
+
 
 
 function assert(test, message, test_number) {
@@ -150,3 +267,4 @@ assert(
   "Ivy should be elected Treasurer.",
   "8. "
 )
+
