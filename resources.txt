@@ -1,0 +1,22 @@
+JS
+
+Object constructor:
+http://www.w3schools.com/js/js_object_definition.asp
+
+More on prototypes
+http://www.phpied.com/3-ways-to-define-a-javascript-class/
+
+
+
+
+Ruby
+
+Splat operator
+https://endofline.wordpress.com/2011/01/21/the-strange-ruby-splat/
+
+net/http cheat sheet:
+https://github.com/augustl/net-http-cheat-sheet/blob/master/normal.rb
+augustl/net-http-cheat-sheet
+
+bastards book post on nokogiri:
+http://ruby.bastardsbook.com/chapters/html-parsing/
