@@ -7,8 +7,6 @@ More on prototypes
 http://www.phpied.com/3-ways-to-define-a-javascript-class/
 
 
-
-
 Ruby
 
 Splat operator
